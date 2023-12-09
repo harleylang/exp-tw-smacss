@@ -27,8 +27,8 @@ Tailwind: 9.4kb total: 4.2kb HTML, 5.2kb CSS.
 
 Live production comparisons:
 
-- BSM Home: 88.5kb total: 32.8kb, 55.7kb CSS
-- BSM Used Cars: 139.7kb total: 28.7kb, 111kb CSS (untreeshaken)
+- BSM Home: 88.5kb total: 32.8kb HTML, 55.7kb CSS
+- BSM Used Cars: 139.7kb total: 28.7kb HTML, 111kb CSS (untreeshaken)
 - Tailwindcss.com: 106.6kb total: 57.5kb HTML, 49.1kb CSS
 
 Likely tradeoff:
