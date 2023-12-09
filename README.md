@@ -44,5 +44,7 @@ Tailwind
   - If a change to the component is required, every component that is rendered needs to change.
   - In a JS framework or templating system this might be fine. In a larger mixed-rendering system this might be more difficult to orchestrate and will require editing in multiple places.
     - How would this scale for static content like a form that doesn't merit a JS file?
+  - TW docs say to [use multicursor / loops](https://tailwindcss.com/docs/reusing-styles) but that doesn't really scale.
 - No BEM / class system.
+  - TW docs say [to avoid classes](https://tailwindcss.com/docs/functions-and-directives#using-apply-with-per-component-css) but that seems counterintuitive. Is utility-based style development at the sacrifice of basic css functionality, e.g., the cascade and reusable styles?
   - Why not take the best of both worlds? BEM + utilities?
