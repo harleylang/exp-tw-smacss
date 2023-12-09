@@ -4,7 +4,14 @@
   "description": "A test of tw vs smacss",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "yarn start:server & yarn start:scss",
+    "start:server": "wds --config ./wds.config.mjs --app-index www/html/index.html",
+    "start:scss": "sass --no-source-map -w www/smacss --style compressed"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.29",
+    "@web/dev-server-esbuild": "^0.2.16",
+    "sass": "^1.53.0"
   },
   "author": "Harley Lang",
   "license": "ISC"

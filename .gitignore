@@ -1,4 +1,5 @@
 node_modules
+*.lock
 
 # rendered css files
 www/smacss/**/*.css*
