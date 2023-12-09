@@ -4,14 +4,16 @@
   "description": "A test of tw vs smacss",
   "main": "index.js",
   "scripts": {
-    "start": "yarn start:server & yarn start:scss",
+    "start": "yarn start:server & yarn start:scss & yarn start:tw",
     "start:server": "wds --config ./wds.config.mjs --app-index www/html/index.html",
-    "start:scss": "sass --no-source-map -w www/smacss --style compressed"
+    "start:scss": "sass --no-source-map -w www/smacss --style compressed",
+    "start:tw": "npx tailwindcss -i www/tw/index.css -o www/tw/dist/index.css --watch"
   },
   "devDependencies": {
     "@web/dev-server": "^0.1.29",
     "@web/dev-server-esbuild": "^0.2.16",
-    "sass": "^1.53.0"
+    "sass": "^1.53.0",
+    "tailwindcss": "^3.3.6"
   },
   "author": "Harley Lang",
   "license": "ISC"
