@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* from: https://stackoverflow.com/a/70480061/14198287 */
+@layer base {
+  .brand-1 {
+    --color-primary: 1, 126, 219;
+  }
+  .brand-2 {
+    --color-primary: 0, 226, 201;
+  }
+  .brand-3 {
+    --color-primary: 203, 0, 0;
+  }
+}
