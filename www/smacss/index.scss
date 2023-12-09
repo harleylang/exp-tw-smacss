@@ -1,0 +1,107 @@
+// variables
+$branding: (
+  "brand-1": rgb(1, 126, 219),
+  "brand-2": rgb(0, 226, 201),
+  "brand-3": rgb(203, 0, 0),
+);
+
+// mixins
+@mixin branding($attr) {
+  @each $key, $value in $branding {
+    .#{$key} & {
+      #{$attr}: #{$value};
+    }
+  }
+}
+
+// base
+[data-test="smacss"] {
+  margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  font-family: BlinkMacSystemFont, Roboto;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+}
+
+p {
+  margin: 0;
+}
+
+// component
+.vehicle-card {
+  border-radius: 0.938rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 6px 10px 0 #0000001a;
+
+  &__ribbon {
+    color: rgb(255 255 255);
+    font-size: 0.688rem;
+    padding: 0.125rem 0.5rem;
+    position: absolute;
+    @include branding(background-color);
+  }
+
+  &__img,
+  &__derivative-container {
+    cursor: pointer;
+  }
+
+  &__img {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__derivative {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    &-container {
+      &:hover {
+        @include branding(color);
+      }
+    }
+  }
+
+  &__selling-point,
+  &__our-price-title,
+  &__summary {
+    font-weight: 300;
+  }
+
+  &__selling-point {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  &__our-price {
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1rem;
+
+    &-title {
+      font-size: 0.75rem;
+    }
+
+    &-value {
+      font-weight: 700;
+      font-size: 1.188rem;
+    }
+  }
+
+  &__summary {
+    color: rgb(102 102 102);
+    font-size: 0.813rem;
+  }
+}

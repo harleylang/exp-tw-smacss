@@ -18,9 +18,23 @@ yarn start
 
 ## Interpretations
 
-[ ] TODO: Evaluate HTML + CSS builds across both frameworks.
+### Is Tailwind really lighter?
 
-Tailwind: 4.2kb HTML, 5.2kb CSS.
+In this repo:
+
+SCSS: 5.9kb total: 4.0kb HTML, 1.9kb CSS.
+Tailwind: 9.4kb total: 4.2kb HTML, 5.2kb CSS.
+
+Live production comparisons:
+
+- BSM Home: 88.5kb total: 32.8kb, 55.7kb CSS
+- BSM Used Cars: 139.7kb total: 28.7kb, 111kb CSS (untreeshaken)
+- Tailwindcss.com: 106.6kb total: 57.5kb HTML, 49.1kb CSS
+
+Likely tradeoff:
+
+- As you implement SCSS, your CSS will grow.
+- As you integrate Tailwind, your HTML will grow.
 
 ### 1. Multibrand theming
 
@@ -56,6 +70,8 @@ Tailwind
   - Why not take the best of both worlds? BEM + utilities?
 
 ## Thoughts
+
+- The bytes will always be somewhere.
 
 - Is Tailwind best for products that are...?
 
