@@ -1,1 +1,4 @@
 node_modules
+
+# rendered css files
+www/smacss/**/*.css*
