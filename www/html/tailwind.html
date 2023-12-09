@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Experiment - Tailwind vs SMACSS - Tailwind</title>
+    <link rel="stylesheet" href="../tw/dist/index.css" />
   </head>
   <body>
     <nav>
@@ -18,79 +19,97 @@
       </ul>
     </nav>
     <hr />
-    <div data-test="tailwind">
+    <div data-test="tailwind" class="grid grid-cols-1 sm:grid-cols-3 gap-4 m-8">
       <div class="brand-1">
-        <article>
-          <section>IN STOCK</section>
-          <section>
+        <article
+          class="group relative rounded-xl-15 overflow-hidden shadow-card"
+        >
+          <section
+            class="absolute bg-primary text-white p-0.5 pl-2 pr-2 text-xxs"
+          >
+            IN STOCK
+          </section>
+          <section class="cursor-pointer">
             <img
               src="https://www.bristolstreet.co.uk/custom/52146%5E600x450%5E.jpg"
             />
           </section>
-          <section>
-            <header>
-              <strong> Vehicle derivative </strong>
+          <section class="p-4">
+            <header class="cursor-pointer">
+              <strong class="text-base group-hover:text-primary"
+                >Vehicle derivative</strong
+              >
             </header>
-            <p>Affordable, compact</p>
-            <div>
-              <caption>
-                Our price
-              </caption>
-              <p>£20,000</p>
+            <p class="text-sm font-light mt-2">Affordable, compact</p>
+            <div class="mt-1 mb-2">
+              <p class="text-xs font-light">Our price</p>
+              <p class="text-lg-19 leading-4 font-bold">£20,000</p>
             </div>
-            <caption>
+            <p class="text-sm-13 text-grey font-light">
               13/63 Reg | 1,000 Miles | Manual
-            </caption>
+            </p>
           </section>
         </article>
       </div>
       <div class="brand-2">
-        <article>
-          <section>IN STOCK</section>
-          <section>
+        <article
+          class="group relative rounded-xl-15 overflow-hidden shadow-card"
+        >
+          <section
+            class="absolute bg-primary text-white p-0.5 pl-2 pr-2 text-xxs"
+          >
+            IN STOCK
+          </section>
+          <section class="cursor-pointer">
             <img
               src="https://www.bristolstreet.co.uk/custom/52146%5E600x450%5E.jpg"
             />
           </section>
-          <section>
-            <header>
-              <strong> Vehicle derivative </strong>
+          <section class="p-4">
+            <header class="cursor-pointer">
+              <strong class="text-base group-hover:text-primary"
+                >Vehicle derivative</strong
+              >
             </header>
-            <p>Affordable, compact</p>
-            <div>
-              <caption>
-                Our price
-              </caption>
-              <p>£20,000</p>
+            <p class="text-sm font-light mt-2">Affordable, compact</p>
+            <div class="mt-1 mb-2">
+              <p class="text-xs font-light">Our price</p>
+              <p class="text-lg-19 leading-4 font-bold">£20,000</p>
             </div>
-            <caption>
+            <p class="text-sm-13 text-grey font-light">
               13/63 Reg | 1,000 Miles | Manual
-            </caption>
+            </p>
           </section>
         </article>
       </div>
       <div class="brand-3">
-        <article>
-          <section>IN STOCK</section>
-          <section>
+        <article
+          class="group relative rounded-xl-15 overflow-hidden shadow-card"
+        >
+          <section
+            class="absolute bg-primary text-white p-0.5 pl-2 pr-2 text-xxs"
+          >
+            IN STOCK
+          </section>
+          <section class="cursor-pointer">
             <img
               src="https://www.bristolstreet.co.uk/custom/52146%5E600x450%5E.jpg"
             />
           </section>
-          <section>
-            <header>
-              <strong> Vehicle derivative </strong>
+          <section class="p-4">
+            <header class="cursor-pointer">
+              <strong class="text-base group-hover:text-primary"
+                >Vehicle derivative</strong
+              >
             </header>
-            <p>Affordable, compact</p>
-            <div>
-              <caption>
-                Our price
-              </caption>
-              <p>£20,000</p>
+            <p class="text-sm font-light mt-2">Affordable, compact</p>
+            <div class="mt-1 mb-2">
+              <p class="text-xs font-light">Our price</p>
+              <p class="text-lg-19 leading-4 font-bold">£20,000</p>
             </div>
-            <caption>
+            <p class="text-sm-13 text-grey font-light">
               13/63 Reg | 1,000 Miles | Manual
-            </caption>
+            </p>
           </section>
         </article>
       </div>
